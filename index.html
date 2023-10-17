@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid red;
+}
+
+.logo {
+    font-size: 24px;
+    color: rgb(32, 32, 217);
+    border: 1px solid green;
+    margin-left: 10%;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 200px;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+.menu-toggle {
+    display: none;
+    /* flex-direction: column; */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+
+@media (max-width: 1250px) and (min-width:768px){
+    .nav-links{
+        margin-right: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        /* color: #fff; */
+        border: 3px solid blue;
+        margin-right: 0px;
+    }
+
+    .nav-links.Iactive {
+        display: block;
+    }
+    .nav-links a{
+        color: #fff;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* .bar:nth-child(1) {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    .bar:nth-child(2) { 
+        opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+        transform: translateY(-3px) rotate(-45deg);
+    } */
+}
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu-toggle">
+            <!-- <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div> -->
+            ☰
+        </div>
+        <ul class="nav-links">
+            <!-- <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li> -->
+            <li><a href="#">Join community</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    console.log("clicked")
+    navLinks.classList.toggle("Iactive");
+});
+</script>
+</html>
