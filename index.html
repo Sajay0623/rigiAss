@@ -1,143 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigi Assignment</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style></style>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Logo</div>
+      <div class="menu-toggle">
+        <!-- <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div> -->
+        ☰
+      </div>
+      <ul class="nav-links">
+        <!-- <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li> -->
+        <li><a href="#">Join community</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div id="intro">
+        <div>
+          <p>Hack your wealth journey inside the 1% club</p>
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.navbar {
-    background-color: #FFFFFF;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border: 2px solid red;
-}
-
-.logo {
-    font-size: 24px;
-    color: rgb(32, 32, 217);
-    border: 1px solid green;
-    margin-left: 10%;
-
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin-right: 200px;
-}
-
-.nav-links li {
-    margin-right: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ff6600;
-}
-
-.menu-toggle {
-    display: none;
-    /* flex-direction: column; */
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: transform 0.4s, opacity 0.4s;
-}
-
-
-@media (max-width: 1250px) and (min-width:768px){
-    .nav-links{
-        margin-right: 120px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        left: 0;
-        z-index: 1;
-        /* color: #fff; */
-        border: 3px solid blue;
-        margin-right: 0px;
-    }
-
-    .nav-links.Iactive {
-        display: block;
-    }
-    .nav-links a{
-        color: #fff;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    /* .bar:nth-child(1) {
-        transform: translateY(3px) rotate(45deg);
-    }
-
-    .bar:nth-child(2) { 
-        opacity: 0;
-    }
-
-    .bar:nth-child(3) {
-        transform: translateY(-3px) rotate(-45deg);
-    } */
-}
-</style>
-<body>
-    <div class="navbar">
-        <div class="logo">Logo</div>
-        <div class="menu-toggle">
-            <!-- <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div> -->
-            ☰
+          <p>
+            A super premiem annual subscription that will transform ypur wealth
+            planning and make you say - "Bro! I'm financially sorted!"
+          </p>
         </div>
-        <ul class="nav-links">
-            <!-- <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li> -->
-            <li><a href="#">Join community</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-    </div>
-</body>
-<script>
-    const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+        <div>
+          <img
+            src="https://i.postimg.cc/sXr8vwR4/rigi-Image.png"
+            alt="IntroImage"
+          />
+        </div>
+      </div>
+      <div id="btnDiv"><button>Join the community</button></div>
+    </section>
+    <section id="second">
+      <p style="margin: 20px 0px">Featured in</p>
+      <div class="ParaContaniner">
+        <p class="namePara">Forbes</p>
+        <p style="color: #335ff4; padding-top: 6px">
+          <span class="nameSpan">T</span>HE<span class="nameSpan"> E</span
+          >CONOMIC <span class="nameSpan"> T</span>IMES
+        </p>
+        <p class="namePara">mint</p>
+      </div>
+      <div class="ParaContaniner">
+        <p style="font-size: x-large; color: #335ff4; font-weight: 400">
+          THE TIMES OF INDIA
+        </p>
+        <p class="namePara">Forbes</p>
+      </div>
+      <p style="margin: 20px 0px">About me</p>
+      <h3>Enterpreneur, content creater, Finance Influencer</h3>
+      <img
+        id="lapiBoy"
+        src="https://i.postimg.cc/0NgkMp09/img2.png"
+        alt="SecondSectionImage"
+      />
+      <article id="secondSectionArt">
+        <p>
+          Hi, I'm Finance With Sharan. I’m a former management consultant at
+          KPMG and PwC where I worked with banks and NBFCs to help them make a
+          ton of money.
+        </p>
+        <p>
+          I now work as a full-time content creator and help the common man make
+          a ton of money.
+        </p>
+        <p>
+          I create engaging personal finance content with a blend of comedic
+          flavor and cosplay on Instagram and YouTube. I also write down highly
+          action oriented posts on LinkedIn and Twitter for those who are not on
+          social media platforms and prefer to read it instead.
+        </p>
+      </article>
+      <div class="socialLogoDiv">
+        <img
+          src="https://i.postimg.cc/9ft347TV/7693314-instagram-social-media-logo-apps-icon.png"
+          alt=""
+        />
+        <img
+          src=" https://i.postimg.cc/HsnY3FbL/353422-facebook-logo-icon.png"
+          alt=""
+        />
+        <img
+          src="https://i.postimg.cc/XJn35PV4/2809749-in-linked-media-online-social-icon.png"
+          alt=""
+        />
+        <img
+          src="https://i.postimg.cc/8CRNjGgZ/5305173-tweet-twitter-twitter-logo-icon.png"
+          alt=""
+        />
+        <img
+          src="https://i.postimg.cc/DwYBL4nZ/5279120-play-video-youtube-youtuble-logo-icon.png"
+          alt=""
+        />
+      </div>
 
-menuToggle.addEventListener('click', () => {
-    console.log("clicked")
-    navLinks.classList.toggle("Iactive");
-});
-</script>
+      <p style="margin-top: 40px">Services</p>
+      <h3 style="margin-top: 35px">
+        Start your journey towards financial freedom
+      </h3>
+
+      <div id="buttonContainer"></div>
+    </section>
+    <section id="thirdSection">
+      <div class="card">
+        <img
+          style="
+            width: 98%;
+            display: block;
+            margin: auto;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            margin-top: 5px;
+          "
+          src="https://i.postimg.cc/fk4jgMhN/img4.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">The 1% course</h5>
+          <p class="card-text">
+            Now, I'm on a mission to help you get to the RICHEST 1% - one
+            educational finance content at a time.
+          </p>
+          <button
+            class="btn"
+            style="
+              width: 90%;
+              color: white;
+              border-radius: 25px;
+              background-color: #335ff4;
+              display: block;
+              margin: auto;
+            "
+          >
+            Buy the course @ रु3,999
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          style="
+            width: 98%;
+            display: block;
+            margin: auto;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            margin-top: 5px;
+          "
+          src="https://i.postimg.cc/fk4jgMhN/img4.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">The 1% course</h5>
+          <p class="card-text">
+            Now, I'm on a mission to help you get to the RICHEST 1% - one
+            educational finance content at a time.
+          </p>
+          <button
+            class="btn"
+            style="
+              width: 90%;
+              color: white;
+              border-radius: 25px;
+              background-color: #335ff4;
+              display: block;
+              margin: auto;
+            "
+          >
+            Buy the course @ रु3,999
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          style="
+            width: 98%;
+            display: block;
+            margin: auto;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            margin-top: 5px;
+          "
+          src="https://i.postimg.cc/fk4jgMhN/img4.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">The 1% course</h5>
+          <p class="card-text">
+            Now, I'm on a mission to help you get to the RICHEST 1% - one
+            educational finance content at a time.
+          </p>
+          <button
+            class="btn"
+            style="
+              width: 90%;
+              color: white;
+              border-radius: 25px;
+              background-color: #335ff4;
+              display: block;
+              margin: auto;
+            "
+          >
+            Buy the course @ रु3,999
+          </button>
+        </div>
+      </div>
+    </section>
+    <div id="buttonContainerFirst"></div>
+
+    <section id="forthSection">
+      <div class="card">
+        <img
+          src="https://i.postimg.cc/fk4jgMhN/img4.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h6 class="card-title">
+            SCO vs HEA Dream11 Team Prediction | Dream11
+          </h6>
+          <div style="display: flex; justify-content: space-between">
+            <div>
+              <img
+                style="width: 15px; height: 15px"
+                src="https://i.postimg.cc/NFQ77YY2/9111286-calendar-icon.png"
+                alt=""
+              />
+              12 slotes left
+            </div>
+            <div>
+              <img
+                style="width: 15px; height: 15px"
+                src="https://i.postimg.cc/T2KqXRY0/3643779-clock-hour-ticker-time-times-icon.png"
+                alt=""
+              />15 min
+            </div>
+            <div>रु199/slot</div>
+          </div>
+          <button class="btn">View Details</button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://i.postimg.cc/fk4jgMhN/img4.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h6 class="card-title">
+            SCO vs HEA Dream11 Team Prediction | Dream11
+          </h6>
+          <div style="display: flex; justify-content: space-between">
+            <div>
+              <img
+                style="width: 15px; height: 15px"
+                src="https://i.postimg.cc/NFQ77YY2/9111286-calendar-icon.png"
+                alt=""
+              />
+              12 slotes left
+            </div>
+            <div>
+              <img
+                style="width: 15px; height: 15px"
+                src="https://i.postimg.cc/T2KqXRY0/3643779-clock-hour-ticker-time-times-icon.png"
+                alt=""
+              />15 min
+            </div>
+            <div>रु199/slot</div>
+          </div>
+          <button class="btn">View Details</button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://i.postimg.cc/fk4jgMhN/img4.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h6 class="card-title">
+            SCO vs HEA Dream11 Team Prediction | Dream11
+          </h6>
+          <div style="display: flex; justify-content: space-between">
+            <div>
+              <img
+                style="width: 15px; height: 15px"
+                src="https://i.postimg.cc/NFQ77YY2/9111286-calendar-icon.png"
+                alt=""
+              />
+              12 slotes left
+            </div>
+            <div>
+              <img
+                style="width: 15px; height: 15px"
+                src="https://i.postimg.cc/T2KqXRY0/3643779-clock-hour-ticker-time-times-icon.png"
+                alt=""
+              />15 min
+            </div>
+            <div>रु199/slot</div>
+          </div>
+          <button class="btn">View Details</button>
+        </div>
+      </div>
+    </section>
+    <p style="text-align: center; margin-top: 40px">Testimonials</p>
+    <h3 style="text-align: center; margin-top: 25px">
+      What community members are saying about us?
+    </h3>
+    <section id="fifthSection">
+      <div class="card">
+        <p class="card-text">
+          Now, I'm on a mission to help you get to the RICHEST 1% - one
+          educational finance content at a time. Now, I'm on a mission to help
+          you get to the RICHEST 1% - one educational finance content at a time.
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src="https://i.postimg.cc/fk4jgMhN/img4.png"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">The 1% course</h5>
+          <h6 class="card-des">Hotel owner</h6>
+        </div>
+      </div>
+      <div class="card">
+        <p class="card-text">
+          Now, I'm on a mission to help you get to the RICHEST 1% - one
+          educational finance content at a time. Now, I'm on a mission to help
+          you get to the RICHEST 1% - one educational finance content at a time.
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src="https://i.postimg.cc/fk4jgMhN/img4.png"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">The 1% course</h5>
+          <h6 class="card-des">Hotel owner</h6>
+        </div>
+      </div>
+      <div class="card">
+        <p class="card-text">
+          Now, I'm on a mission to help you get to the RICHEST 1% - one
+          educational finance content at a time. Now, I'm on a mission to help
+          you get to the RICHEST 1% - one educational finance content at a time.
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src="https://i.postimg.cc/fk4jgMhN/img4.png"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">The 1% course</h5>
+          <h6 class="card-des">Hotel owner</h6>
+        </div>
+      </div>
+    </section>
+    <p style="text-align: center; margin-top: 40px">Media section</p>
+    <h3 style="text-align: center; margin-top: 25px">
+      Check out the intro video of the community
+    </h3>
+    <div style="height: 350px">
+      <img
+        style="width: 60%; height: 100%; display: block; margin: auto"
+        src="https://i.postimg.cc/rwTh1gv7/img6.png"
+        alt=""
+      />
+    </div>
+
+    <section id="sixSection">
+      <p>Get the app in one click!</p>
+      <h4>Hack your wealth journey inside the 1% club</h4>
+      <button id="sixBtnfirst">join the community</button>
+      <div style="margin-top: 70px">
+        <img
+          style="width: 75%; height: 100%"
+          src="https://i.postimg.cc/gj4ZxfTH/img7.png"
+          alt=""
+        />
+      </div>
+      <div id="sixSexBtnDiv">
+        <button id="sixSecHidBtn">join the community</button>
+      </div>
+    </section>
+    <p style="text-align: center; margin-top: 40px">Contact us</p>
+    <h3 style="text-align: center; margin-top: 25px">
+      Do you have any queries, feel free to reach out to us
+    </h3>
+    <section id="sevenSection">
+      <div class="Contect">
+        <div class="contectDivImg">
+          <img
+            src="https://i.postimg.cc/zBSPtFBP/134146-mail-email-icon.png"
+            alt=""
+          />
+        </div>
+        <div class="contectDivPara">
+          <span>Email us</span>
+          <p>Support@gmail.com</p>
+        </div>
+      </div>
+      <div class="Contect">
+        <div class="contectDivImg">
+          <img
+            src="https://i.postimg.cc/FzTCmF0y/843786-whatsapp-icon.png"
+            alt=""
+          />
+        </div>
+        <div class="contectDivPara">
+          <span>We are available on Whatsapp</span>
+          <p>Click to Whatsapp</p>
+        </div>
+      </div>
+      <div class="Contect">
+        <div class="contectDivImg">
+          <img
+            src="https://i.postimg.cc/KjGpd33c/2849835-phone-telephone-cell-call-communication-icon.png"
+            alt=""
+          />
+        </div>
+        <div class="contectDivPara">
+          <span>Call for sales & Support</span>
+          <p>+91-8460068722</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h4>Logo</h4>
+      <div class="socialLogoDiv">
+        <img
+          src="https://i.postimg.cc/T3KNMWQQ/7693314-instagram-social-media-logo-apps-icon-1.png"
+          alt=""
+        />
+        <img
+          src="https://i.postimg.cc/FsWCBxb7/5305154-fb-facebook-facebook-logo-icon.png"
+          alt=""
+        />
+        <img
+          src="https://i.postimg.cc/yx7pwQrS/734393-in-linked-media-online-social-icon.png"
+          alt=""
+        />
+        <img
+          src="https://i.postimg.cc/155YBdqk/5279123-tweet-twitter-twitter-logo-icon.png"
+          alt=""
+        />
+        <img
+          src="https://i.postimg.cc/ry9PSTKG/5279120-play-video-youtube-youtuble-logo-icon-1.png"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <img
+          id="apple"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxzscVR0D5UHb2uBQz-SBkkWKQ0zohmuWMag&usqp=CAU"
+          alt=""
+        />
+        <img
+          id="google"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mqBWDsUT_kTSbY14zvvnBM32yI45OodZ1olIdMYWNapUBWdQM1LnpRMd7GnDOTzt7IU&usqp=CAU"
+          alt=""
+        />
+      </div>
+      <div
+        style="
+          border-bottom: 1px solid gray;
+          width: 90%;
+          height: 0.1px;
+          margin: auto;
+          margin-bottom: 15px;
+        "
+      ></div>
+      <div id="about">
+        <p>© 2023 companyname. inc.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of services</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="index.js"></script>
+
+  
 </html>

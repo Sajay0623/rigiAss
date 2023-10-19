@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ebeffd;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: #335ff4;
+
+  margin-left: 10%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 200px;
+}
+
+.nav-links li {
+  margin-right: 30px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+.menu-toggle {
+  display: none;
+  /* flex-direction: column; */
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+/* Body content CSS */
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 500px; */
+  border: 1px solid red;
+  background-color: #335ff4;
+}
+
+#intro div:first-child {
+  width: 500px;
+  line-height: 1.2;
+  color: white;
+  height: 250px;
+  text-align: justify;
+}
+
+#intro div:last-child {
+  width: 35%;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+}
+#intro > div > p:nth-child(1) {
+  font-size: 2.5rem;
+}
+#intro > div > p:nth-child(2) {
+  /* font-size: 1em; */
+  margin-top: 15px;
+}
+#intro div img {
+  height: 300px;
+  margin-left: 15%;
+  display: block;
+}
+
+#btnDiv {
+  display: none;
+}
+
+/* second section goes here  */
+#second {
+  text-align: center;
+}
+.ParaContaniner {
+  display: flex;
+
+  justify-content: space-around;
+  width: 500px;
+  margin: auto;
+}
+.namePara {
+  font-weight: 700;
+  font-size: x-large;
+  color: #335ff4;
+  margin-top: 10px;
+}
+.nameSpan {
+  font-size: x-large;
+  font-weight: 400;
+  color: #335ff4;
+}
+#second #lapiBoy {
+  width: 599px;
+  height: 599px;
+  margin-top: 30px;
+}
+#secondSectionArt {
+  width: 63%;
+
+  margin: auto;
+}
+#secondSectionArt p {
+  margin: 15px 0px;
+  line-height: 1.4;
+}
+
+.socialLogoDiv {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 400px;
+
+  margin: auto;
+  margin-top: 20px;
+}
+.socialLogoDiv img {
+  display: block;
+  height: 100%;
+  width: 50px;
+}
+
+/* Third section will go here */
+
+#thirdSection,
+#forthSection,
+#fifthSection {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#thirdSection .card,
+#forthSection .card,
+#fifthSection .card {
+  margin-top: 25px;
+  width: 18rem;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btnFn {
+  margin: 20px 20px;
+  width: 160px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+#buttonContainerFirst {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 40%;
+}
+#buttonContainerFirst .btnFn {
+  display: block;
+}
+#forthSection .card-img-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 10px 0px 10px 8px;
+}
+
+#forthSection .btn {
+  width: 90%;
+  color: white;
+  border-radius: 25px;
+  background-color: #335ff4;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#fifthSection .card-img-top {
+  display: block;
+
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  margin: 10px 0px 10px 8px;
+}
+#fifthSection .card-text,
+#fifthSection .card-title,
+#fifthSection .card-des {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#sixSection {
+  background-color: #335ff4;
+  text-align: center;
+  color: #ebeffd;
+  width: 100%;
+  /* height: 900px; */
+
+  margin-top: 50px;
+  border-top-left-radius: 757px;
+  border-top-right-radius: 757px;
+}
+#sixSection p {
+  margin-top: 70px;
+  padding-top: 100px;
+}
+#sixSection button {
+  color: #335ff4;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+#sixSection #sixSecHidBtn {
+  display: none;
+}
+
+#sevenSection {
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+  margin: auto;
+}
+
+.Contect {
+  display: flex;
+
+  margin: auto;
+}
+
+.Contect .contectDivImg {
+  width: 60px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+.Contect .contectDivImg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.Contect .contectDivPara {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  width: 100%;
+  background-color: #335ff4;
+  color: #ebeffd;
+  text-align: center;
+  padding-top: 20px;
+}
+#apple {
+  width: 150px;
+  height: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#google {
+  width: 150px;
+  height: 39px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#about {
+  text-align: center;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin: auto;
+  justify-content: space-around;
+}
+
+@media (max-width: 1250px) and (min-width: 768px) {
+  .nav-links {
+    margin-right: 120px;
+  }
+  #thirdSection,
+  #forthSection {
+    width: 100%;
+  }
+  #sevenSection {
+    width: 99%;
+  }
+  #about {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    /* color: #fff; */
+
+    margin-right: 0px;
+  }
+
+  .nav-links.Iactive {
+    display: block;
+  }
+  .nav-links a {
+    color: #fff;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  #intro {
+    display: block;
+  }
+  #intro div:first-child {
+    width: 100%;
+    height: 400px;
+    text-align: left;
+  }
+  #intro div:last-child {
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+  }
+  #intro div img {
+    width: 80%;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  #intro > div > p:nth-child(1) {
+    font-size: 3em;
+    padding-left: 40px;
+    padding-top: 25px;
+    margin-top: 40px;
+    /* display: none; */
+  }
+  #intro > div > p:nth-child(2) {
+    font-size: 2em;
+    padding-left: 40px;
+    /* padding-top: 25px; */
+    /* display: none; */
+  }
+
+  #second #lapiBoy {
+    width: 400px;
+    height: 400px;
+  }
+  #secondSectionArt {
+    width: 80%;
+
+    margin: auto;
+  }
+
+  #btnDiv {
+    background-color: #335ff4;
+    display: block;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  #btnDiv button,
+  #sixSexBtnDiv #sixSecHidBtn {
+    width: 80%;
+    color: #335ff4;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .ParaContaniner {
+    width: 350px;
+  }
+  .socialLogoDiv {
+    width: 300px;
+  }
+
+  .btnFn {
+    width: 100px;
+    margin: 17px 2px;
+
+    padding: 5px 5px;
+    border-radius: 25px;
+  }
+
+  #thirdSection,
+  #forthSection,
+  #fifthSection {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  #thirdSection .card,
+  #forthSection .card,
+  #fifthSection .card {
+    margin: auto;
+    margin-top: 25px;
+  }
+  #sixSection #sixBtnfirst {
+    display: none;
+  }
+
+  #sixSection #sixSecHidBtn {
+    display: block;
+  }
+
+  #sevenSection {
+    display: block;
+  }
+  #sevenSection .Contect {
+    margin-top: 20px;
+  }
+
+  #about {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  /* .bar:nth-child(1) {
+      transform: translateY(3px) rotate(45deg);
+  }
+
+  .bar:nth-child(2) { 
+      opacity: 0;
+  }
+
+  .bar:nth-child(3) {
+      transform: translateY(-3px) rotate(-45deg);
+  } */
+}
+
+@media (max-width: 590px) {
+  #intro div:first-child {
+    height: 500px;
+  }
+}
