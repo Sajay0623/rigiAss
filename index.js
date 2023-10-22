@@ -1,58 +1,52 @@
-const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+const menuIcon = document.getElementById("menu-toggle");
+const clsIconn = document.getElementById("clsIcon");
+const menu = document.getElementById("menu");
 
-    menuToggle.addEventListener("click", () => {
-      console.log("clicked");
-      navLinks.classList.toggle("Iactive");
-    });
+menuIcon.addEventListener("click", function () {
+  menu.classList.add("reActive");
+  menu.style.display = "flex";
+});
 
-    function createButtonsFn(ArrOfstr) {
-      const buttonContainer = document.getElementById("buttonContainer");
+clsIconn.addEventListener("click", function () {
+  menu.classList.remove("reActive");
+});
 
-      for (let i = 0; i < ArrOfstr.length; i++) {
-        const button = document.createElement("button");
-        button.innerText = ArrOfstr[i];
-        button.classList.add("custom-button");
-        button.classList.add("btnFn");
+const menu_link = document.querySelectorAll(".hide");
+for (let i = 0; i < menu_link.length; i++) {
+  menu_link[i].addEventListener("click", function () {
+    menu.classList.remove("reActive");
+  });
+}
+let community = document.querySelector(".service-section-club");
+let courses = document.querySelector(".service-section-child-courses");
+let consultation = document.querySelector(
+  ".service-section-child-consultation"
+);
+let communitybutton = document.getElementById("Community");
+let coursesbutton = document.getElementById("Courses");
+let consultationbutton = document.getElementById("Consultation");
+consultationbutton.addEventListener("click", function () {
+    community.style.display = "none";
+    consultation.style.display = "grid";
+    courses.style.display = "none";
+    consultationbutton.classList.add("active");
+    communitybutton.classList.remove("active");
+    coursesbutton.classList.remove("active");
+  });
+communitybutton.addEventListener("click", function () {
+    community.style.display = "grid";
+    consultation.style.display = "none";
+    courses.style.display = "none";
+    communitybutton.classList.add("active");
+    coursesbutton.classList.remove("active");
+    consultationbutton.classList.remove("active");
+  });
+coursesbutton.addEventListener("click", function () {
+  community.style.display = "none";
+  consultation.style.display = "none";
+  courses.style.display = "grid";
+  coursesbutton.classList.add("active");
+  communitybutton.classList.remove("active");
+  consultationbutton.classList.remove("active");
+});
 
-        button.addEventListener("click", function () {
-          const buttons = document.querySelectorAll(".custom-button");
-
-          for (let j = 0; j < buttons.length; j++) {
-            console.log(j);
-            buttons[j].style.backgroundColor = "lightgray";
-          }
-          console.log("aaa");
-          button.style.backgroundColor = "#335ff4";
-        });
-
-        buttonContainer.appendChild(button);
-      }
-    }
-
-    function createButtonsFn1(ArrOfstr) {
-      const buttonContainer = document.getElementById("buttonContainerFirst");
-
-      for (let i = 0; i < ArrOfstr.length; i++) {
-        const button = document.createElement("button");
-        button.innerText = ArrOfstr[i];
-        button.classList.add("custom-button");
-        button.classList.add("btnFn");
-
-        button.addEventListener("click", function () {
-          const buttons = document.querySelectorAll(".custom-button");
-
-          for (let j = 0; j < buttons.length; j++) {
-            console.log(j);
-            buttons[j].style.backgroundColor = "lightgray";
-          }
-          console.log("aaa");
-          button.style.backgroundColor = "#335ff4";
-        });
-
-        buttonContainer.appendChild(button);
-      }
-    }
-
-    createButtonsFn(["Community", "Courses", "Consultation"]);
-    createButtonsFn1(["Community", "Courses", "Consultation"]);
